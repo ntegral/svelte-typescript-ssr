@@ -14,9 +14,13 @@ export function app() {
     
     server.use(compression());
     if (NODE_ENV === 'production') {
-        sivr('public', { dev: false })
+        server.use(
+            sivr('public', { dev: false })
+        );
     } else {
-        sivr('public', { dev:true })
+        server.use(
+            sivr('public', { dev:true })
+        )
     }
 
     server.on('error', (err)=> {
