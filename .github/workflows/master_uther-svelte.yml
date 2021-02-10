@@ -25,6 +25,9 @@ jobs:
       run: |
         npm install
         npm run build --if-present
+        # npm run start --if-present
+        npm run build:server --if-present
+        npm run start:server --if-present
         npm run test --if-present
 
     - name: 'Deploy to Azure Web App'
@@ -32,5 +35,5 @@ jobs:
       with:
         app-name: 'uther-svelte'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_da57de6ad3cf4b89ba038f93443041f6 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_02980e5f56214cb0ab07e348828b7b05 }}
         package: .
