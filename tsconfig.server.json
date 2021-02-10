@@ -1,10 +1,14 @@
 {
     "extends": "./tsconfig.json",
     "compilerOptions": {
-        "outDir": "./out-tsc/app-server",
-        "module": "commonjs"
+        "outDir": "./dist",
+        "module": "commonjs",
+        "baseUrl": ".",
+        "incremental": true,
+        "sourceMap": true
     },
-    "files": [
-        "./server/index.ts"
-    ]
+    "include": [
+        "server/**/*"
+    ],
+    "exclude": ["node_modules"]
 }
