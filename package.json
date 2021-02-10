@@ -21,6 +21,7 @@
     "Server Side Rendering"
   ],
   "scripts": {
+    "build": "rollup -c",
     "build:client": "rollup -c",
     "dev:client": "rollup -c -w",
     "start": "sirv public",
