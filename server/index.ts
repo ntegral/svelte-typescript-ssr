@@ -31,7 +31,7 @@ export function app() {
 }
 
 function run() {
-    const port = PORT || 8080;
+    const port = PORT || 80;
 
     // Start up the Node server
     const server = app();
