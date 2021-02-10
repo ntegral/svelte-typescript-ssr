@@ -1,6 +1,25 @@
 {
-  "name": "svelte-app",
+  "contributors": [
+    {
+      "name": "Dexter Hardy",
+      "email": "dexter.hardy@ntegral.com",
+      "url": "http://www.ntegral.com"
+    }
+  ],
+  "name": "svelte-typescript-ssr",
   "version": "1.0.0",
+  "description": "Svelte stater kit for server side rendering using typescript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntegral/svelte-typescript-ssr"
+  },
+  "keywords": [
+    "Svelte",
+    "Typescript",
+    "Express",
+    "SSR",
+    "Server Side Rendering"
+  ],
   "scripts": {
     "build:client": "rollup -c",
     "dev:client": "rollup -c -w",
